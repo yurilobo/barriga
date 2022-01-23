@@ -1,0 +1,13 @@
+-Para usar xpath
+npm install -D cypress-xpath
+Em seguida, inclua no cypress/support/index.js do seu projeto
+
+require('cypress-xpath')
+
+-indicar a prioridade 
+Cypress.SelectorPlayground.defaults({
+    selectorPriority: ['data-wc', 'data-cy', 'data-test', 'data-testid', 'id', 'class', 'attributes', 'tag', 'nth-child']
+})
+
+
+----------------------------
