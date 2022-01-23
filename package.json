@@ -1,0 +1,14 @@
+{
+  "name": "senhor-barriga",
+  "version": "1.0.0",
+  "description": "Testes no site barriga react",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Yuri Anderson",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.3.1"
+  }
+}
