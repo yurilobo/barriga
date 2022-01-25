@@ -7,7 +7,7 @@ const locators = {
     MENU:{
         SETTINGS:'[data-test="menu-settings"]',
         CONTAS: '[href="/contas"]',
-        RESET: '[href="/contas"]'
+        RESET: '[href="/reset"]'//eu tinha esquecido de subistituit o caminho contas por reset
     },
     CONTAS:{
         NOME:'[data-test="nome"]',

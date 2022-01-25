@@ -12,3 +12,5 @@ Cypress.SelectorPlayground.defaults({
 
 ----------------------------
 App actions e uso dos loccators
+____________________________-
+comando que se repetem em todos é interessante que estejam em comands
