@@ -9,7 +9,8 @@ const locators = {
         SETTINGS:'[data-test="menu-settings"]',
         CONTAS: '[href="/contas"]',
         RESET: '[href="/reset"]',
-        MOVIMENTACAO: '[data-test="menu-movimentacao"]'
+        MOVIMENTACAO: '[data-test="menu-movimentacao"]',
+        EXTRATO: '[data-test="menu-extrato"]',
     },
     CONTAS:{
         NOME:'[data-test="nome"]',
@@ -29,7 +30,8 @@ const locators = {
     },
     EXTRATO:{
         LINHAS: '.list-group>li',
-        FN_XP_BUSCA_ELEMENTO:(desc, value)=>`//span[contains(.,'${desc}')]//following-sibling::small[contains(.,'${value}')]`
+        FN_XP_BUSCA_ELEMENTO:(desc, value)=>`//span[contains(.,'${desc}')]//following-sibling::small[contains(.,'${value}')]`,
+        FN_XP_REMOVER_ELEMENTO: conta => `//span[contains(., '${conta}')]/../../..//i[@class='far fa-trash-alt']`
     },
         MESSAGE: '.toast-message'
 }
