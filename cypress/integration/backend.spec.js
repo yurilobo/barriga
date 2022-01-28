@@ -12,7 +12,7 @@ describe('Should test at a functional level',()=>{
     it('Should create an account',()=>{
         cy.request({
             method: 'POST',
-            url: 'https://barrigareact.wcaquino.me/signin',
+            url: 'https://barrigarest.wcaquino.me/signin',
             body:{
                 email: "yuri@1",
                 redirecionar: false,
