@@ -32,8 +32,26 @@ describe('Should test at a functional level', () => {
 
 
     })
-    it('Should update an accont', () => {
+    it.only('Should update an accont', () => {
+        cy.request({
+            method: 'GET',
+            url:'/contas',
+            headers: {Authorization:`JWT ${token}`},
+            as:{
+                nome:'Conta para alterar'
+            }
+        }).then(res=>console.log(res))
 
+       /* cy.request({
+            url: '/contas/',
+            method: 'PUT',
+            headers: { Authorization: `JWT ${token}` },
+            body: {
+                nome: "conta alterada via rest"
+            }
+        }).as('response')
+        cy.get('@response').its('status').should('be.equal', 200)
+        */
     })
     it('Should not crate an account with same name', () => {
 
